@@ -475,6 +475,7 @@ function! s:open_quickfix(request, copen) abort
       if has_key(a:request, 'compiler')
         call setbufvar(bufnr, 'current_compiler', a:request.compiler)
       endif
+      G
     endif
   endfor
 endfunction
